@@ -1,6 +1,6 @@
 # Citation Audit — The Revolutionary Beginner's Guide to Quantum Computing (v1.2)
 
-Audit date: 2026-08-20. Method: every bibliographic entry verified live against
+Audit date: 2026-08-21 (v1.3 additions live-verified). Method: every bibliographic entry verified live against
 Crossref (api.crossref.org), the arXiv API, and the Zenodo records API. No entry
 was accepted on the citing text's word alone. Author lists checked for every
 entry (P3.AUTHOR-GATE-EVERY-ENTRY-1).
@@ -41,6 +41,11 @@ entry (P3.AUTHOR-GATE-EVERY-ENTRY-1).
 | 10.5281/zenodo.21979060 | records API 200, title matches | PASS |
 | 10.5281/zenodo.21991953 | records API 200, v2.1.1, title matches | PASS |
 | 10.5281/zenodo.21991899 | records API 200, v1.1.2, title matches | PASS |
+| 10.5281/zenodo.21880104 | records API 200, v0.7, title matches | PASS |
+| 10.5281/zenodo.17955898 | records API 200, 1.0.1, title matches | PASS |
+| 10.5281/zenodo.21747228 | records API 200, 1.0, title matches | PASS |
+| 10.5281/zenodo.22012694 | records API 200, 1.1.2, title matches | PASS |
+| 10.5281/zenodo.21992229 | records API 200, 0.9, title matches | PASS |
 
 ## In-text numeric claims tied to citations
 

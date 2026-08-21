@@ -20,6 +20,33 @@ the validation results (10.5281/zenodo.20134944), the 24 W per logical qubit
 estimate (10× uncertainty band); unanalyzable primitives — the claim that the
 Archimedean-vs-ultrametric choice is a physical question at all.
 
+## v1.3.2 scope (2026-08-21) — README restoration
+
+v1.3/v1.3.1 shipped the repository blueprint as README.md (git-restore clobber).
+v1.3.2 restores the deposit manifest and adds structural upload guards for BOTH
+LICENSE (byte-size + CC header) and README (How-to-Cite marker) — LICENSE-CLOBBER-1
+extended to README-CLOBBER-1.
+
+## v1.3.1 scope (2026-08-21) — deposit-file correction
+
+v1.3 shipped the repository license (QNFO-ULA, 505 B) as LICENSE by an automation
+error; v1.3.1 restores the CC BY 4.0 legal code (18,657 B) and the full
+rendering-check log. Structural guard added: the publish flow now asserts the
+deposit LICENSE byte-size before upload (LICENSE-CLOBBER-1).
+
+## v1.3 scope (2026-08-21) — substantive update (user mandate)
+
+User correction accepted: v1.2.x was largely cosmetic. v1.3 incorporates the research
+published since the May 2026 release: joules-per-solution benchmark section (Ch. 9,
+qudit JPCUB 21880104 with its unvalidated-framework caveat), E3 hardware design
+(trapped-ion falsifiability register 22025544, five pre-registered observables),
+falsification exemplar (prime-valuation correction 21979060), calibrated displacement
+assessment as open problem 8 (21747228), thermodynamic-successor evidence (17955898),
+consolidated thesis references (21991899/21992229/21991953), QCA verification template
+(22012694). Rendering fixes: all currency symbols escaped (false MathJax pairs
+eliminated — 0 odd-$ lines), duplicated body abstract/date removed (YAML is the
+single source).
+
 ## v1.2.1 scope (2026-08-21) — post-publication audit corrections
 
 Red-team (3 reviewers, 0 HARD / 8 SOFT+DESIGN): "Six open problems" summary

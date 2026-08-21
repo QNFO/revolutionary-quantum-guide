@@ -1,0 +1,10 @@
+[PASS] no odd unescaped-$ lines odd=0 []
+[PASS] no unescaped currency dollars cur=0 []
+[PASS] no duplicated body date/abstract dup=[]
+[PASS] no U+FFFD in decompressed PDF text streams stream_hits=0 (raw-byte count 1 is compressed-data coincidence — FFFD-RAW-FALSE-POSITIVE-1)
+[PASS] single rendered title 
+[PASS] zero body h1 
+[PASS] single abstract div 
+[PASS] no FFFD in rendered HTML text 
+
+SUMMARY: 8 PASS / 0 FAIL

@@ -246,19 +246,7 @@ three falsifiable predictions that can be tested for under $300,000.</p>
 href="mailto://rowan.quni@outlook.com">Rowan Brad Quni-Gudzinas</a>
 <strong>ORCID:</strong> <a
 href="https://orcid.org/0009-0002-4317-5604">0009-0002-4317-5604</a>
-<strong>DOI:</strong> 10.5281/zenodo.22038733 <strong>Date:</strong>
-2026-08-21</p>
-<p><strong>Abstract:</strong> A 20-chapter beginner’s guide to quantum
-computing that starts with an honest question — why don’t we have
-quantum computers yet? — rather than the usual “here’s what a qubit is.”
-The guide teaches the standard curriculum (qubits, entanglement,
-algorithms, error correction) accurately, explains why the standard
-approach faces a thermodynamic wall (a 20,000-fold cooling gap that is
-Carnot-limited), and introduces the ultrametric alternative with
-DOI-registered evidence, computationally validated error thresholds 75
-times higher than surface codes (classical simulation only; not yet
-demonstrated on quantum hardware), and three falsifiable predictions
-testable for under $300,000.</p>
+<strong>DOI:</strong> 10.5281/zenodo.22040750</p>
 <h3 id="part-i-the-honest-landscape">Part I: The Honest Landscape</h3>
 <hr />
 <h3 id="how-to-read-this-guide">How to Read This Guide</h3>
@@ -753,6 +741,14 @@ exceeds 24 megawatts. <code>[EST]</code> for the cooling physics;
 consequence of the Carnot limit — the fundamental bound on heat pump
 efficiency. No amount of engineering optimization can bridge a
 Carnot-limited gap of this magnitude. <code>[EST]</code></p>
+<p>A 2026 successor analysis treats the thermodynamic and informational
+bottlenecks jointly (10.5281/zenodo.17955898): an integrated
+thermal-equilibrium model of a machine designed to run Shor’s algorithm
+finds that even under optimistic technological assumptions, the required
+qubit count, cooling power, and classical decoding speed remain orders
+of magnitude beyond plausible near-term capabilities. The barrier is not
+a single engineering challenge but a multi-physics resource gap.
+<code>[PROP]</code></p>
 <h4 id="the-surface-code-plateau">The Surface Code Plateau</h4>
 <p>This is why the surface code is not a path to practical quantum
 computing at commercially useful scales. Google’s 2023 demonstration
@@ -857,6 +853,12 @@ Architectural Inversions in Scalable Quantum Information Systems.</em>
 Zenodo. DOI: 10.5281/zenodo.17938113. <code>[PROP]</code></li>
 <li>Quni-Gudzinas, R. B. (2025). <em>The Lifecycle of a Fault-Tolerant
 Quantum Computer.</em> Archive: 2025/12. <code>[PROP]</code></li>
+<li>Quni-Gudzinas, R. B. (2025). <em>Thermodynamic and Informational
+Bottlenecks of Scalable Fault-Tolerant Quantum Computation.</em> Zenodo.
+DOI: 10.5281/zenodo.17955898. <code>[PROP]</code></li>
+<li>Quni-Gudzinas, R. B. (2026). <em>The Qudit Advantage: System-Level
+Joules-per-Solution Comparison.</em> Zenodo. DOI:
+10.5281/zenodo.21880104. <code>[PROP]</code></li>
 </ol>
 <hr />
 <p><em>End of Part I. Part II (Chapters 4-7) will cover the standard
@@ -1630,9 +1632,42 @@ for fault-tolerant quantum computing does not exist, and building it
 faces physical constraints — not just cost constraints.
 <code>[PROP]</code></p>
 <hr />
-<h4
+<h4 id="from-the-wall-to-a-benchmark-joules-per-solution">From the Wall
+to a Benchmark: Joules per Solution</h4>
+<p>The thermodynamic wall can be restated as a measurable engineering
+metric. Define <strong>joules per solution</strong> (JPCUB): the total
+wall energy consumed per correct, useful answer — including cryogenics,
+control electronics, classical decoding, and error-correction overhead.
+The question this guide has been asking qualitatively — what does a
+correct quantum answer cost? — becomes a number any platform can be
+measured against.</p>
+<p>The metric is physics-grounded rather than arbitrary. Landauer’s
+principle bounds the energy per erased bit from below; the
+Margolus–Levitin theorem bounds the speed of dynamical evolution per
+unit energy; Bremermann’s limit bounds computation per unit energy. A
+joules-per-solution measurement inherits these ceilings: a platform
+cannot win by spending more energy, only by answering correctly for
+less. <code>[EST]</code></p>
+<p>The first system-level comparison published under this benchmark
+(10.5281/zenodo.21880104) compares a qudit architecture against
+seventeen conventional qubit platforms and, under its model assumptions,
+projects the qudit design below <span
+class="math inline">\(10^{-2}\)</span> joules per solution. The paper’s
+own caveat is the one this guide insists on: the framework has not been
+externally validated, and the estimates are hypotheses, not demonstrated
+results. <code>[PROP]</code></p>
+<p>For the reader, the benchmark converts this chapter’s argument into a
+falsifiable prediction. Chapter 14’s tree-code numbers (241 vs ~40
+physical qubits at distance-11-equivalent protection; a 75× threshold
+advantage; zero syndrome measurements) imply a joules-per-solution
+claim: a passive tree-topology processor should spend its energy budget
+at the 4 K stage, not the 20 mK stage. When a tree-topology device
+exists, that prediction can be measured directly — the same way the
+qudit estimate was. The wall stops being an argument and becomes a
+number. <code>[PROP]</code></p>
+<h3
 id="counterarguments-what-the-mainstream-qc-community-would-say">Counterarguments
-— What the Mainstream QC Community Would Say</h4>
+— What the Mainstream QC Community Would Say</h3>
 <p>A critic reading this chapter would raise several objections.
 Engaging with them honestly strengthens the argument — and helps the
 reader evaluate the evidence.</p>
@@ -2612,6 +2647,13 @@ Buildings.” arXiv:1801.09623 / PAMQ 16(1), 1-33. <code>[EST]</code></li>
 <li>Rammal, R., Toulouse, G., &amp; Virasoro, M. A. (1986).
 “Ultrametricity for physicists.” <em>Reviews of Modern Physics</em>,
 58(3), 765-788. <code>[EST]</code></li>
+<li>Quni-Gudzinas, R. B. (2026). <em>Ultrametric Foundation: A
+Mathematical Thesis on Non-Archimedean Physics.</em> Zenodo. DOI:
+10.5281/zenodo.21991899. <code>[PROP]</code></li>
+<li>Quni-Gudzinas, R. B. (2026). <em>The Ultrametric Paradigm.</em>
+Zenodo. DOI: 10.5281/zenodo.21992229. <code>[PROP]</code></li>
+<li>Quni-Gudzinas, R. B. (2026). <em>Quantum Laws of Form.</em> Zenodo.
+DOI: 10.5281/zenodo.21991953. <code>[PROP]</code></li>
 </ol>
 <hr />
 <p><em>End of Part IV. Part V (Chapters 15-17) will cover The
@@ -2681,6 +2723,15 @@ claims. Publish your scores. Invite contradiction.</strong> It costs
 nothing. It builds credibility with audiences that evaluate on
 substance. And it forces you to be honest with yourself about what you
 know and what you hope. <code>[EST]</code></p>
+<p>The program’s falsification discipline has at least one worked
+example on the record. A 2026 follow-on to the program’s number-theory
+work (10.5281/zenodo.21979060) subjected the branch-depth reading of
+stabilizer codes to its own stated falsifiability condition — and
+published a correction, not a confirmation: the naive mapping carries no
+new content, and code distance does not admit a valuation reading. A
+research program that publishes its own refutations is, at minimum,
+running the experiment this chapter recommends. Whether the discipline
+generalizes is for the reader to judge. <code>[PROP]</code></p>
 <h4 id="what-fair-criticism-looks-like">What Fair Criticism Looks
 Like</h4>
 <p>The ultrametric framework deserves criticism. Every scientific
@@ -2927,7 +2978,19 @@ observables has been published (10.5281/zenodo.22025544)</td>
 </tr>
 </tbody>
 </table>
-<h4 id="why-this-sequence-matters">Why This Sequence Matters</h4>
+<p>#Since the May 2026 edition, the hardware path has a design. The
+trapped-ion ultrametric testbed (10.5281/zenodo.22025544) organizes
+twenty-one program records into one testable claim, with five
+pre-registered observables, each carrying a kill-condition and an
+apparatus already demonstrated in the cited literature. The register
+also records what the program has already ruled out: generic clock-rest
+coupling violates ultrametricity at a 29–35 percent rate, while diagonal
+coupling yields exact ultrametric structure — the very asymmetry the
+protocol is designed to measure. This does not execute E3. It makes E3
+fundable: the design, the observables, and the kill-conditions are on
+the table for any laboratory that wants to run the experiment.
+<code>[PROP]</code></p>
+<h3 id="why-this-sequence-matters">Why This Sequence Matters</h3>
 <p>The experiments are structured in a deliberate sequence of increasing
 cost and increasing decisiveness:</p>
 <ol type="1">
@@ -3110,6 +3173,12 @@ $100,000 Question.</em> QWAV Strategy Archive, May 2026.
 <li>Planck Collaboration. (2020). “Planck 2018 results. I. Overview and
 the cosmological legacy of Planck.” <em>Astronomy &amp;
 Astrophysics</em>, 641, A1. <code>[EST]</code></li>
+<li>Quni-Gudzinas, R. B. (2026). <em>The Trapped-Ion Ultrametric
+Testbed: A Falsifiability Register.</em> Zenodo. DOI:
+10.5281/zenodo.22025544. <code>[PROP]</code></li>
+<li>Quni-Gudzinas, R. B. (2026). <em>Implications for Computing and
+Quantum Error Correction.</em> Zenodo. DOI: 10.5281/zenodo.21979060.
+<code>[PROP]</code></li>
 </ol>
 <hr />
 <p><em>End of Part V. Part VI (Chapters 18-20) will complete the guide:
@@ -3201,6 +3270,14 @@ code is hitting thermodynamic limits. The tree code offers 75× better
 thresholds. LDPC codes, bosonic codes, and other alternatives are being
 explored. The field is converging on the view that error correction —
 not qubit count, not gate fidelity — is the bottleneck.
+<code>[PROP]</code></p>
+<p><strong>Benchmark discipline:</strong> demand joules per solution.
+For any quantum investment — internal or external — require an energy
+number: total wall energy per correct, useful answer, with cooling and
+error-correction overhead included. A roadmap without an energy number
+is a marketing document (Chapter 15). The QWAV energy-efficiency
+benchmark (10.5281/zenodo.21880104) is one published instance; the
+metric itself is platform-neutral and costs nothing to demand.
 <code>[PROP]</code></p>
 <p><strong>Intellectual posture:</strong> Distinguish <code>[EST]</code>
 from <code>[PROP]</code>. Demand falsifiable predictions. Ignore
@@ -3408,6 +3485,17 @@ tradeoff transforms under ultrametric substitution and identifying
 regimes forbidden by the Archimedean bound at small primes. Whether the
 transformed bound is experimentally testable on near-term hardware
 remains open. <code>[OPEN]</code></p>
+<p><strong>8. The calibrated displacement question.</strong> When — if
+ever — will non-Archimedean geometry displace the real numbers as the
+working substrate of a physical domain? The program’s own structured
+assessment (10.5281/zenodo.21747228) anchors the question to a
+historical reference class and registers nine dated calibration
+predictions. Its central estimate: a 0.15–0.20 probability of
+displacement in at least one domain by 2036, with the null hypothesis —
+non-Archimedean modeling remains a niche tool — as the well-anchored
+prediction. The geometric alternative in this guide is a bet inside that
+envelope, and the honest reader should price it accordingly.
+<code>[PROP]</code></p>
 <h4 id="why-uncertainty-is-not-weakness">Why Uncertainty Is Not
 Weakness</h4>
 <p>A scientific program that acknowledges its open problems is stronger
@@ -3519,6 +3607,9 @@ Architectural Inversions.</em> Zenodo. DOI: 10.5281/zenodo.17938113.
 <li>Quni-Gudzinas, R. B. (2026). <em>Convergence, Consilience, and the
 Hierarchical Architecture of Reality.</em> Zenodo. DOI:
 10.5281/zenodo.20302276. <code>[PROP]</code></li>
+<li>Quni-Gudzinas, R. B. (2026). <em>When Will Non-Archimedean Geometry
+Displace the Real Numbers?</em> Zenodo. DOI: 10.5281/zenodo.21747228.
+<code>[PROP]</code></li>
 </ol>
 <hr />
 <p><em>End of Part VI. This completes the 20-chapter Revolutionary
@@ -3534,6 +3625,17 @@ Update — August 2026</h2>
 <p>This appendix records what has changed since the first publication of
 this guide (May 2026), for readers who already read the earlier
 version.</p>
+<p><strong>What is new in v1.3 (August 2026).</strong> This edition adds
+the joules-per-solution benchmark as a measurable form of the
+thermodynamic argument (Chapter 9), records the publication of a
+hardware design for experiment E3 with five pre-registered observables
+(Chapter 16), documents the program’s published self-correction on
+prime-valuation readings of quantum codes (Chapter 15), adds the
+calibrated displacement assessment to the open problems (Chapter 20),
+and extends the evidence trail with the program’s 2026
+thermodynamic-successor analysis and its consolidated mathematical
+thesis. The five corrections from the May edition, each verified by a
+deposited computation (Appendix B), remain recorded below.</p>
 <p><strong>Corrections.</strong> Five quantitative statements in the May
 2026 edition were wrong and are corrected in this edition, each verified
 by an independent computation (Appendix B):</p>
@@ -3708,6 +3810,10 @@ class="math inline">\(\pi\sqrt{N}/4\)</span>)</td>
 </tr>
 </tbody>
 </table>
+<p>The same discipline applies across the program: the QCA Toy Model
+(10.5281/zenodo.22012694) ships a fully reproducible exact state-vector
+simulation with the paper, and every reported number in it is
+reproducible from the deposited source.</p>
 <p><strong>Reproducibility.</strong> Runtime: Python 3.12, standard
 library only, deterministic (no random numbers, no seeds required).
 Re-run with

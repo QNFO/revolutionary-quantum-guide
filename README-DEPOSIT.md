@@ -2,7 +2,7 @@
 
 **Why We Don't Have Quantum Computers Yet — and What the Geometric Alternative Offers**
 
-Rowan Brad Quni-Gudzinas (QNFO/QWAV) · v1.2.2 · 2026-08-21 · CC BY 4.0
+Rowan Brad Quni-Gudzinas (QNFO/QWAV) · v1.3.2 · 2026-08-21 · CC BY 4.0
 
 A 20-chapter beginner's guide to quantum computing that starts with an honest
 question — why don't we have quantum computers yet? The guide teaches the
@@ -22,8 +22,32 @@ resolve to the most recent version:
 
 Quni-Gudzinas, Rowan Brad. *The Revolutionary Beginner's Guide to Quantum
 Computing: Why We Don't Have Quantum Computers Yet — and What the Geometric
-Alternative Offers.* v1.2.2, Zenodo, 2026-08-21.
+Alternative Offers.* v1.3.2, Zenodo, 2026-08-21.
 https://doi.org/10.5281/zenodo.20391554
+
+## What changed in v1.3.2 (August 2026)
+
+- README.md restored to this deposit manifest (a project-blueprint README was
+  attached in v1.3/v1.3.1 by an automation error). Structural guards now assert
+  both the LICENSE and README contents before every upload. No content changes.
+
+## What changed in v1.3.1 (August 2026)
+
+- LICENSE file corrected to the full CC BY 4.0 International legal code (an
+  automation error shipped the program's repository license in v1.3); the
+  rendering-check log now carries the full per-check record. No content changes.
+
+## What changed in v1.3 (August 2026)
+
+- Substantive update: joules-per-solution benchmark section (Chapter 9), E3 hardware
+  design with five pre-registered observables (Chapter 16), the program's published
+  self-correction as a falsification exemplar (Chapter 15), the calibrated displacement
+  assessment as open problem 8 (Chapter 20), and an extended evidence trail (2026
+  thermodynamic-successor analysis, qudit benchmark, consolidated mathematical thesis,
+  QCA verification template).
+- Rendering and structure fixes: currency symbols escaped so no false math delimiters
+  remain; duplicated abstract/date removed from the body (the YAML header is the single
+  source).
 
 ## What changed in v1.2.2 (August 2026)
 
@@ -59,7 +83,7 @@ https://doi.org/10.5281/zenodo.20391554
 
 | File | Purpose |
 |:-----|:--------|
-| `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.md` | Manuscript (v1.2.2) |
+| `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.md` | Manuscript (v1.3.2) |
 | `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.html` | Rendered HTML |
 | `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.pdf` | Rendered PDF |
 | `references.bib` | All references, BibTeX |

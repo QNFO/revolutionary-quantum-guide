@@ -3,8 +3,8 @@ title: "The Revolutionary Beginner's Guide to Quantum Computing"
 subtitle: "Why We Don't Have Quantum Computers Yet — and What the Geometric Alternative Offers"
 authors: "Rowan Brad Quni-Gudzinas"
 date: "2026-08-21"
-doi: "10.5281/zenodo.22038733"
-version: "v1.2.2"
+doi: "10.5281/zenodo.22040750"
+version: "v1.3.2"
 abstract: >
   A 20-chapter beginner's guide to quantum computing that starts with an honest question
   — why don't we have quantum computers yet? — rather than the usual "here's what a
@@ -14,7 +14,7 @@ abstract: >
   alternative: passive geometric fault tolerance on Bruhat-Tits trees, with DOI-registered
   evidence, computationally validated error thresholds 75 times higher than surface codes
   (validated by classical simulation; not yet demonstrated on quantum hardware),
-  and three falsifiable predictions that can be tested for under $300,000.
+  and three falsifiable predictions that can be tested for under \$300,000.
 keywords: ["quantum computing", "quantum error correction", "ultrametric geometry",
   “Bruhat-Tits tree”, “thermodynamic wall”, “passive fault tolerance”, “surface code”,
   “post-quantum cryptography”, “beginner's guide”]
@@ -25,10 +25,8 @@ status: "published"
 
 **Author:** [Rowan Brad Quni-Gudzinas](mailto://rowan.quni@outlook.com)
 **ORCID:** [0009-0002-4317-5604](https://orcid.org/0009-0002-4317-5604)
-**DOI:** 10.5281/zenodo.22038733
-**Date:** 2026-08-21
+**DOI:** 10.5281/zenodo.22040750
 
-**Abstract:** A 20-chapter beginner's guide to quantum computing that starts with an honest question — why don't we have quantum computers yet? — rather than the usual "here's what a qubit is." The guide teaches the standard curriculum (qubits, entanglement, algorithms, error correction) accurately, explains why the standard approach faces a thermodynamic wall (a 20,000-fold cooling gap that is Carnot-limited), and introduces the ultrametric alternative with DOI-registered evidence, computationally validated error thresholds 75 times higher than surface codes (classical simulation only; not yet demonstrated on quantum hardware), and three falsifiable predictions testable for under $300,000.
 
 ### Part I: The Honest Landscape
 
@@ -152,7 +150,7 @@ In 2026, IEEE Spectrum called neutral atoms "2026's Big Leap" — the platform b
 
 Photonic quantum computers encode information in individual particles of light — photons. Because photons interact weakly with their environment, photonic systems can operate at room temperature, eliminating the cryogenic cooling problem entirely. `[EST]`
 
-**Why they are appealing:** Room-temperature operation. Natural compatibility with fiber-optic networks — photons are the native currency of communication. PsiQuantum has raised over $665 million in private funding — plus a A$940 million Australian government package announced in 2024 — to develop silicon photonic quantum computers using existing semiconductor fabrication infrastructure. `[EST]`
+**Why they are appealing:** Room-temperature operation. Natural compatibility with fiber-optic networks — photons are the native currency of communication. PsiQuantum has raised over \$665 million in private funding — plus a A\$940 million Australian government package announced in 2024 — to develop silicon photonic quantum computers using existing semiconductor fabrication infrastructure. `[EST]`
 
 **Why they are not yet proven:** Photon loss is a fundamental challenge. Photons can be absorbed, scattered, or simply fail to arrive at detectors. Two-qubit gates require photons to interact, and photons do not naturally interact — they pass through each other. Creating effective photon-photon interactions requires either massive multiplexing overhead (generating many photons and post-selecting the ones that happened to interact) or strong optical nonlinearities that are difficult to achieve. No photonic platform has demonstrated a fault-tolerant logical qubit. `[EST]`
 
@@ -212,6 +210,8 @@ Now do the arithmetic. Each surface code logical qubit, at scale, would dissipat
 
 This is not an engineering problem. It is a **thermodynamic** problem. The 20,000× gap between what the 4 K stage can provide and what the millikelvin stage can deliver is a consequence of the Carnot limit — the fundamental bound on heat pump efficiency. No amount of engineering optimization can bridge a Carnot-limited gap of this magnitude. `[EST]`
 
+A 2026 successor analysis treats the thermodynamic and informational bottlenecks jointly (10.5281/zenodo.17955898): an integrated thermal-equilibrium model of a machine designed to run Shor's algorithm finds that even under optimistic technological assumptions, the required qubit count, cooling power, and classical decoding speed remain orders of magnitude beyond plausible near-term capabilities. The barrier is not a single engineering challenge but a multi-physics resource gap. `[PROP]`
+
 #### The Surface Code Plateau
 
 This is why the surface code is not a path to practical quantum computing at commercially useful scales. Google's 2023 demonstration (*Nature*, Vol. 614, p. 676) showed that increasing the surface code distance from 3 to 5 reduced the logical error rate from approximately 3% to approximately 2.9% — a marginal improvement. `[EST]` Extrapolating this trend linearly to distance 11 projects error rates of approximately 2.6% — still far from useful. `[PROP]` (A linear extrapolation is the conservative plateau model; Google's measured per-cycle suppression factor, $\Lambda pprox 2.14$, would project a lower rate under exponential scaling — but the qubit, measurement, and cooling costs grow with distance either way.)
@@ -248,6 +248,8 @@ For now, the key insight is this: **the bottleneck in quantum computing is not q
 4. Google Quantum AI. (2023). "Suppressing quantum errors by scaling a surface code logical qubit." *Nature*, 614, 676-681. `[EST]`
 5. Quni-Gudzinas, R. B. (2025). *Thermodynamic Constraints and Architectural Inversions in Scalable Quantum Information Systems.* Zenodo. DOI: 10.5281/zenodo.17938113. `[PROP]`
 6. Quni-Gudzinas, R. B. (2025). *The Lifecycle of a Fault-Tolerant Quantum Computer.* Archive: 2025/12. `[PROP]`
+7. Quni-Gudzinas, R. B. (2025). *Thermodynamic and Informational Bottlenecks of Scalable Fault-Tolerant Quantum Computation.* Zenodo. DOI: 10.5281/zenodo.17955898. `[PROP]`
+8. Quni-Gudzinas, R. B. (2026). *The Qudit Advantage: System-Level Joules-per-Solution Comparison.* Zenodo. DOI: 10.5281/zenodo.21880104. `[PROP]`
 
 ---
 
@@ -539,7 +541,7 @@ These numbers come from the Bruhat-Tits Quantum Processor paper `[PROP]` — com
 
 A dilution refrigerator is the device that cools superconducting and spin qubits to their operating temperature of approximately 10-20 millikelvin — colder than interstellar space. It works by exploiting the unique properties of helium-3 and helium-4 mixtures at ultra-low temperatures. When a mixture of $^3$He and $^4$He is cooled below approximately 0.87 K, it separates into two phases: a $^3$He-rich phase and a $^3$He-dilute phase. Pumping $^3$He from the dilute phase into the rich phase absorbs heat — the same principle as evaporative cooling, but exploiting quantum statistics rather than latent heat. `[EST]`
 
-A commercial dilution refrigerator is a marvel of cryogenic engineering. It weighs several tons. It costs $500,000 to $1,000,000. It runs on a closed helium-3/helium-4 mixture — helium-3 is a scarce and expensive resource — with continuous operation of compressors, pumps, and control systems. `[EST]`
+A commercial dilution refrigerator is a marvel of cryogenic engineering. It weighs several tons. It costs \$500,000 to \$1,000,000. It runs on a closed helium-3/helium-4 mixture — helium-3 is a scarce and expensive resource — with continuous operation of compressors, pumps, and control systems. `[EST]`
 
 And it delivers approximately **50 microwatts of cooling at the mixing chamber.** `[EST]`
 
@@ -575,7 +577,17 @@ A surface-code quantum computer at commercially useful scale would need to opera
 
 ---
 
-#### Counterarguments — What the Mainstream QC Community Would Say
+#### From the Wall to a Benchmark: Joules per Solution
+
+The thermodynamic wall can be restated as a measurable engineering metric. Define **joules per solution** (JPCUB): the total wall energy consumed per correct, useful answer — including cryogenics, control electronics, classical decoding, and error-correction overhead. The question this guide has been asking qualitatively — what does a correct quantum answer cost? — becomes a number any platform can be measured against.
+
+The metric is physics-grounded rather than arbitrary. Landauer's principle bounds the energy per erased bit from below; the Margolus–Levitin theorem bounds the speed of dynamical evolution per unit energy; Bremermann's limit bounds computation per unit energy. A joules-per-solution measurement inherits these ceilings: a platform cannot win by spending more energy, only by answering correctly for less. `[EST]`
+
+The first system-level comparison published under this benchmark (10.5281/zenodo.21880104) compares a qudit architecture against seventeen conventional qubit platforms and, under its model assumptions, projects the qudit design below $10^{-2}$ joules per solution. The paper's own caveat is the one this guide insists on: the framework has not been externally validated, and the estimates are hypotheses, not demonstrated results. `[PROP]`
+
+For the reader, the benchmark converts this chapter's argument into a falsifiable prediction. Chapter 14's tree-code numbers (241 vs ~40 physical qubits at distance-11-equivalent protection; a 75× threshold advantage; zero syndrome measurements) imply a joules-per-solution claim: a passive tree-topology processor should spend its energy budget at the 4 K stage, not the 20 mK stage. When a tree-topology device exists, that prediction can be measured directly — the same way the qudit estimate was. The wall stops being an argument and becomes a number. `[PROP]`
+
+### Counterarguments — What the Mainstream QC Community Would Say
 
 A critic reading this chapter would raise several objections. Engaging with them honestly strengthens the argument — and helps the reader evaluate the evidence.
 
@@ -906,6 +918,9 @@ This is the ultimate significance of the threshold advantage: it is not just tha
 6. Gubser, S. S., Knaute, J., Parikh, S., Samberg, A., & Witaszczyk, P. (2016). "p-adic AdS/CFT." arXiv:1605.01061. `[EST]`
 7. Marcolli, M. (2018/2020). "Holographic Codes on Bruhat-Tits Buildings." arXiv:1801.09623 / PAMQ 16(1), 1-33. `[EST]`
 8. Rammal, R., Toulouse, G., & Virasoro, M. A. (1986). "Ultrametricity for physicists." *Reviews of Modern Physics*, 58(3), 765-788. `[EST]`
+9. Quni-Gudzinas, R. B. (2026). *Ultrametric Foundation: A Mathematical Thesis on Non-Archimedean Physics.* Zenodo. DOI: 10.5281/zenodo.21991899. `[PROP]`
+10. Quni-Gudzinas, R. B. (2026). *The Ultrametric Paradigm.* Zenodo. DOI: 10.5281/zenodo.21992229. `[PROP]`
+11. Quni-Gudzinas, R. B. (2026). *Quantum Laws of Form.* Zenodo. DOI: 10.5281/zenodo.21991953. `[PROP]`
 
 ---
 
@@ -941,6 +956,8 @@ The QWAV research program includes a self-assessment document — the "Honest In
 The lowest scores went to computational validation (2/10) and team (2/10) — precisely the areas where the program is weakest. The highest scores went to problem validity (9/10), solution novelty (8/10), and timing (8/10) — the areas where the program is strongest. This self-scoring is published openly. It invites contradiction. If you think the problem validity should be 4/10 instead of 9/10, the evidence is available for you to make that case. `[EST]`
 
 This is the methodology this guide recommends: **score your claims. Publish your scores. Invite contradiction.** It costs nothing. It builds credibility with audiences that evaluate on substance. And it forces you to be honest with yourself about what you know and what you hope. `[EST]`
+
+The program's falsification discipline has at least one worked example on the record. A 2026 follow-on to the program's number-theory work (10.5281/zenodo.21979060) subjected the branch-depth reading of stabilizer codes to its own stated falsifiability condition — and published a correction, not a confirmation: the naive mapping carries no new content, and code distance does not admit a valuation reading. A research program that publishes its own refutations is, at minimum, running the experiment this chapter recommends. Whether the discipline generalizes is for the reader to judge. `[PROP]`
 
 #### What Fair Criticism Looks Like
 
@@ -1019,7 +1036,9 @@ The ultrametric quantum computing framework makes three predictions that can be 
 | Risk | High (requires new hardware that does not exist) |
 | Status | `[PRE-EXPERIMENTAL]` — not yet executed; a trapped-ion falsifiability register with five pre-registered observables has been published (10.5281/zenodo.22025544) |
 
-#### Why This Sequence Matters
+#Since the May 2026 edition, the hardware path has a design. The trapped-ion ultrametric testbed (10.5281/zenodo.22025544) organizes twenty-one program records into one testable claim, with five pre-registered observables, each carrying a kill-condition and an apparatus already demonstrated in the cited literature. The register also records what the program has already ruled out: generic clock-rest coupling violates ultrametricity at a 29–35 percent rate, while diagonal coupling yields exact ultrametric structure — the very asymmetry the protocol is designed to measure. This does not execute E3. It makes E3 fundable: the design, the observables, and the kill-conditions are on the table for any laboratory that wants to run the experiment. `[PROP]`
+
+### Why This Sequence Matters
 
 The experiments are structured in a deliberate sequence of increasing cost and increasing decisiveness:
 
@@ -1096,7 +1115,7 @@ The reader of this guide is now equipped to watch for both patterns. You know wh
 | Chapter | Key Insight | Confidence |
 |:--------|:-----------|:-----------|
 | 15. Why Falsifiability Matters | "Five to ten years" is unfalsifiable; the ultrametric framework makes predictions that CAN be wrong; self-scoring methodology (5.6/10) invites contradiction | `[EST]` for philosophy of science; `[PROP]` for specific framework evaluation |
-| 16. The Three Experiments | E1 (CMB: $60K, 3-6 mo), E2 (qubit noise: $200K, 6-12 mo), E3 (tree gate: $0.5-2M, 18-36 mo) — increasing cost, increasing decisiveness | `[PROP]` for predictions; `[OPEN]` for experimental status |
+| 16. The Three Experiments | E1 (CMB: \$60K, 3-6 mo), E2 (qubit noise: \$200K, 6-12 mo), E3 (tree gate: \$0.5-2M, 18-36 mo) — increasing cost, increasing decisiveness | `[PROP]` for predictions; `[OPEN]` for experimental status |
 | 17. Scenario Planning | Four futures mapped: all pass (paradigm shift), partial (geometric insight validated), mixed (iteration), all fail (framework falsified) | `[PROP]` for scenarios |
 
 ---
@@ -1105,8 +1124,10 @@ The reader of this guide is now equipped to watch for both patterns. You know wh
 
 1. Popper, K. (1959). *The Logic of Scientific Discovery.* Hutchinson. `[EST]`
 2. Quni-Gudzinas, R. B. (2026). *Ultrametric Quantum Computation — An MVP Program.* Zenodo. DOI: 10.5281/zenodo.20014913. Chapters 15-22. `[PROP]`
-3. Quni-Gudzinas, R. B. (2026). *Honest Investment Assessment — The $100,000 Question.* QWAV Strategy Archive, May 2026. `[EST]`
+3. Quni-Gudzinas, R. B. (2026). *Honest Investment Assessment — The \$100,000 Question.* QWAV Strategy Archive, May 2026. `[EST]`
 4. Planck Collaboration. (2020). "Planck 2018 results. I. Overview and the cosmological legacy of Planck." *Astronomy & Astrophysics*, 641, A1. `[EST]`
+5. Quni-Gudzinas, R. B. (2026). *The Trapped-Ion Ultrametric Testbed: A Falsifiability Register.* Zenodo. DOI: 10.5281/zenodo.22025544. `[PROP]`
+6. Quni-Gudzinas, R. B. (2026). *Implications for Computing and Quantum Error Correction.* Zenodo. DOI: 10.5281/zenodo.21979060. `[PROP]`
 
 ---
 
@@ -1147,15 +1168,15 @@ IBM Quantum, IonQ, QuEra, and others offer cloud access to real quantum processo
 
 These actions depend on your risk tolerance, resources, and assessment of the evidence:
 
-**4. Fund E1 (CMB log-periodic oscillations). Cost: ~$60,000.**
+**4. Fund E1 (CMB log-periodic oscillations). Cost: ~\$60,000.**
 
 This is the cheapest, fastest test of the ultrametric framework. It uses publicly available data. It requires only computational analysis — no hardware, no lab, no collaborators. A positive result would not prove the framework, but it would justify further investigation. A negative result would cost little. `[PROP]`
 
-**5. Fund E2 (prime-modulated qubit noise). Cost: ~$200,000.**
+**5. Fund E2 (prime-modulated qubit noise). Cost: ~\$200,000.**
 
 This requires cloud quantum computing access but no new hardware. If your organization already has quantum computing budget for experimentation, allocating a portion to noise spectroscopy with ultrametric predictions is a low-marginal-cost addition. `[PROP]`
 
-**6. Monitor E3 (tree gate threshold test). Cost: $0.5M-$2M. Do not fund yet.**
+**6. Monitor E3 (tree gate threshold test). Cost: \$0.5M-\$2M. Do not fund yet.**
 
 E3 requires building new hardware. The case for funding it depends on E1 and E2 results. If E1 and E2 are positive, E3 becomes a compelling bet — the decisive experiment. If E1 and E2 are negative, E3 becomes much harder to justify. Wait for data. `[PROP]`
 
@@ -1164,6 +1185,8 @@ E3 requires building new hardware. The case for funding it depends on E1 and E2 
 **Platform strategy:** Access multiple quantum computing platforms via cloud. Do not bet on a single modality. The cost of platform diversity — learning multiple SDKs, porting algorithms — is far lower than the cost of betting on the wrong hardware. `[PROP]`
 
 **Architecture bet:** The highest-leverage research bet in quantum computing is not on any specific qubit platform but on **alternative error correction architectures.** The surface code is hitting thermodynamic limits. The tree code offers 75× better thresholds. LDPC codes, bosonic codes, and other alternatives are being explored. The field is converging on the view that error correction — not qubit count, not gate fidelity — is the bottleneck. `[PROP]`
+
+**Benchmark discipline:** demand joules per solution. For any quantum investment — internal or external — require an energy number: total wall energy per correct, useful answer, with cooling and error-correction overhead included. A roadmap without an energy number is a marketing document (Chapter 15). The QWAV energy-efficiency benchmark (10.5281/zenodo.21880104) is one published instance; the metric itself is platform-neutral and costs nothing to demand. `[PROP]`
 
 **Intellectual posture:** Distinguish `[EST]` from `[PROP]`. Demand falsifiable predictions. Ignore credentials; evaluate evidence. The most valuable skill this guide teaches is not any specific quantum algorithm. It is the ability to read a quantum computing claim and ask: "What would prove this wrong?" `[EST]`
 
@@ -1236,6 +1259,8 @@ This guide has presented the ultrametric quantum computing framework in some det
 
 **7. The QEC–Darwinism tradeoff in ultrametric spaces.** A 2026 no-go theorem (Maity et al., arXiv:2608.03944) proves that quantum error correction and quantum Darwinism cannot coexist above a critical logical fidelity ($F_L > 0.874$) — in Archimedean geometry. The QWAV program has published an audit of that theorem through Ostrowski's lens on Bruhat–Tits tree code spaces (10.5281/zenodo.21964674), showing the tradeoff transforms under ultrametric substitution and identifying regimes forbidden by the Archimedean bound at small primes. Whether the transformed bound is experimentally testable on near-term hardware remains open. `[OPEN]`
 
+**8. The calibrated displacement question.** When — if ever — will non-Archimedean geometry displace the real numbers as the working substrate of a physical domain? The program's own structured assessment (10.5281/zenodo.21747228) anchors the question to a historical reference class and registers nine dated calibration predictions. Its central estimate: a 0.15–0.20 probability of displacement in at least one domain by 2036, with the null hypothesis — non-Archimedean modeling remains a niche tool — as the well-anchored prediction. The geometric alternative in this guide is a bet inside that envelope, and the honest reader should price it accordingly. `[PROP]`
+
 #### Why Uncertainty Is Not Weakness
 
 A scientific program that acknowledges its open problems is stronger than one that pretends to have all the answers. The open problems are not embarrassments to be hidden. They are the research agenda. They are what a PhD student, a postdoc, or an independent researcher could spend years investigating. They are the invitation to contribute. `[EST]`
@@ -1252,7 +1277,7 @@ The answer, in brief: because the dominant paradigm — active quantum error cor
 
 But there is an alternative. Ultrametric geometry — the geometry of hierarchical trees rather than continuous grids — enables **passive** fault tolerance. Error correction becomes a property of the hardware structure, not an active measurement protocol requiring continuous syndrome readout. The tree code achieves thresholds up to 75× higher than the surface code while operating at 200× warmer temperatures, on roughly one-sixth the physical qubit budget (241 vs ~40 qubits at distance-11-equivalent protection), with local parallel decoding.
 
-This alternative is published, DOI-registered, and computationally validated. It is not yet experimentally demonstrated. It makes three falsifiable predictions — E1 (CMB oscillations), E2 (qubit noise), E3 (tree gate switching) — that can be tested for under $300,000 total for E1+E2.
+This alternative is published, DOI-registered, and computationally validated. It is not yet experimentally demonstrated. It makes three falsifiable predictions — E1 (CMB oscillations), E2 (qubit noise), E3 (tree gate switching) — that can be tested for under \$300,000 total for E1+E2.
 
 Whether the ultrametric framework proves correct or not, it exemplifies the right way to do science: make specific, falsifiable predictions. Publish open-access. Tag your confidence. Invite contradiction. Let the evidence decide.
 
@@ -1281,6 +1306,7 @@ What you do with that knowledge is up to you.
 3. Quni-Gudzinas, R. B. (2026). *Ultrametric Quantum Computation — An MVP Program.* Zenodo. DOI: 10.5281/zenodo.20014913. `[PROP]`
 4. Quni-Gudzinas, R. B. (2025). *Thermodynamic Constraints and Architectural Inversions.* Zenodo. DOI: 10.5281/zenodo.17938113. `[PROP]`
 5. Quni-Gudzinas, R. B. (2026). *Convergence, Consilience, and the Hierarchical Architecture of Reality.* Zenodo. DOI: 10.5281/zenodo.20302276. `[PROP]`
+6. Quni-Gudzinas, R. B. (2026). *When Will Non-Archimedean Geometry Displace the Real Numbers?* Zenodo. DOI: 10.5281/zenodo.21747228. `[PROP]`
 
 ---
 
@@ -1291,6 +1317,8 @@ What you do with that knowledge is up to you.
 ## Appendix A: Program Update — August 2026
 
 This appendix records what has changed since the first publication of this guide (May 2026), for readers who already read the earlier version.
+
+**What is new in v1.3 (August 2026).** This edition adds the joules-per-solution benchmark as a measurable form of the thermodynamic argument (Chapter 9), records the publication of a hardware design for experiment E3 with five pre-registered observables (Chapter 16), documents the program's published self-correction on prime-valuation readings of quantum codes (Chapter 15), adds the calibrated displacement assessment to the open problems (Chapter 20), and extends the evidence trail with the program's 2026 thermodynamic-successor analysis and its consolidated mathematical thesis. The five corrections from the May edition, each verified by a deposited computation (Appendix B), remain recorded below.
 
 **Corrections.** Five quantitative statements in the May 2026 edition were wrong and are corrected in this edition, each verified by an independent computation (Appendix B):
 
@@ -1336,7 +1364,9 @@ Every quantitative claim in this guide that a computer can check has been checke
 | 4 K vs 20 mK | 200× | Chapter 14, Epilogue |
 | Encoding rate 1 − 1/p at p = 2 | 1/2 | Chapter 14 |
 | Grover iterations for N = $10^6$ ($\pi\sqrt{N}/4$) | 785 | Chapter 6 |
-| E1 + E2 combined cost vs $300,000 | $260,000 | Chapters 16–18 |
+| E1 + E2 combined cost vs \$300,000 | \$260,000 | Chapters 16–18 |
+
+The same discipline applies across the program: the QCA Toy Model (10.5281/zenodo.22012694) ships a fully reproducible exact state-vector simulation with the paper, and every reported number in it is reproducible from the deposited source.
 
 **Reproducibility.** Runtime: Python 3.12, standard library only, deterministic (no random numbers, no seeds required). Re-run with `python artifacts/verification/verify_guide_claims.py`; the script writes `artifacts/verification/verification-log.txt` and exits 0 only if every check passes (35 checks in this edition). The five v1.1→v1.2 corrections are recorded in the log.
 
