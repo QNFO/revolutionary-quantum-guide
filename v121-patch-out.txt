@@ -1,0 +1,4 @@
+0.99.md patched: [('version: "v1.2"', 1), ('date: "2026-08-20"', 1), ('10.5281/zenodo.22036025', 2), ('**Date:** 2026-08-20', 1), ("| 20. What We Still Don't Know | Six open problems: perfect ", 1), ('cool 36,000 tons of magnets to 1.9 K — warmer than a dilutio', 1), ('would need to operate at 20 mK — one hundred times colder th', 1), ('5. A dilution refrigerator runs on a closed helium-3/helium-', 1), ('proves that quantum error correction and quantum Darwinism c', 1)]
+citation-audit.md fixed: 1
+README.md updated
+PROJECT-PLAN.md updated

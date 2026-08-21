@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="dcterms.date" content="2026-08-20" />
+  <meta name="dcterms.date" content="2026-08-21" />
   <meta name="keywords" content="quantum computing, quantum error
 correction, ultrametric geometry, “Bruhat-Tits tree”, “thermodynamic
 wall”, “passive fault tolerance”, “surface code”, “post-quantum
@@ -226,7 +226,7 @@ Object.defineProperty(e,"__esModule",{value:!0}),e.mhchemParser=void 0;var r=fun
 Computing</h1>
 <p class="subtitle">Why We Don’t Have Quantum Computers Yet — and What
 the Geometric Alternative Offers</p>
-<p class="date">2026-08-20</p>
+<p class="date">2026-08-21</p>
 <div class="abstract">
 <div class="abstract-title">Abstract</div>
 <p>A 20-chapter beginner’s guide to quantum computing that starts with
@@ -246,8 +246,8 @@ three falsifiable predictions that can be tested for under $300,000.</p>
 href="mailto://rowan.quni@outlook.com">Rowan Brad Quni-Gudzinas</a>
 <strong>ORCID:</strong> <a
 href="https://orcid.org/0009-0002-4317-5604">0009-0002-4317-5604</a>
-<strong>DOI:</strong> 10.5281/zenodo.22036025 <strong>Date:</strong>
-2026-08-20</p>
+<strong>DOI:</strong> 10.5281/zenodo.22038733 <strong>Date:</strong>
+2026-08-21</p>
 <p><strong>Abstract:</strong> A 20-chapter beginner’s guide to quantum
 computing that starts with an honest question — why don’t we have
 quantum computers yet? — rather than the usual “here’s what a qubit is.”
@@ -1619,15 +1619,15 @@ logical qubit per gate cycle. <code>[PROP]</code></p>
 <p>For scale: the Large Hadron Collider at CERN operates the world’s
 largest cryogenic system, using 130 tons of liquid helium to cool 36,000
 tons of magnets to 1.9 K — warmer than a dilution refrigerator’s mixing
-chamber by a factor of 100. The LHC’s cryogenic system consumes tens of
-megawatts of electrical power. <code>[EST]</code></p>
+chamber by a factor of roughly 100. The LHC’s cryogenic system consumes
+tens of megawatts of electrical power. <code>[EST]</code></p>
 <p>A surface-code quantum computer at commercially useful scale would
-need to operate at 20 mK — one hundred times colder than the LHC — while
-dissipating more power at the wall. This is not an apples-to-apples
-comparison (the LHC cools magnets, not qubits), but it illustrates the
-scale of the challenge. Cryogenics at the scale needed for
-fault-tolerant quantum computing does not exist, and building it faces
-physical constraints — not just cost constraints.
+need to operate at 20 mK — roughly one hundred times colder than the LHC
+— while dissipating more power at the wall. This is not an
+apples-to-apples comparison (the LHC cools magnets, not qubits), but it
+illustrates the scale of the challenge. Cryogenics at the scale needed
+for fault-tolerant quantum computing does not exist, and building it
+faces physical constraints — not just cost constraints.
 <code>[PROP]</code></p>
 <hr />
 <h4
@@ -3400,8 +3400,9 @@ framework to working hardware is large. <code>[GAP]</code></p>
 <p><strong>7. The QEC–Darwinism tradeoff in ultrametric spaces.</strong>
 A 2026 no-go theorem (Maity et al., arXiv:2608.03944) proves that
 quantum error correction and quantum Darwinism cannot coexist above a
-critical logical fidelity — in Archimedean geometry. The QWAV program
-has published an audit of that theorem through Ostrowski’s lens on
+critical logical fidelity (<span class="math inline">\(F_L &gt;
+0.874\)</span>) — in Archimedean geometry. The QWAV program has
+published an audit of that theorem through Ostrowski’s lens on
 Bruhat–Tits tree code spaces (10.5281/zenodo.21964674), showing the
 tradeoff transforms under ultrametric substitution and identifying
 regimes forbidden by the Archimedean bound at small primes. Whether the
@@ -3493,11 +3494,12 @@ checklist. Confidence tagging as a transferable cognitive skill.</td>
 </tr>
 <tr>
 <td style="text-align: left;">20. What We Still Don’t Know</td>
-<td style="text-align: left;">Six open problems: perfect tensors for
+<td style="text-align: left;">Seven open problems: perfect tensors for
 <span class="math inline">\(p&gt;2\)</span>, tree automorphism gates,
 full quantum validation, physical noise modeling, Adèle ring connection,
-hardware realization. Uncertainty is the research agenda.</td>
-<td style="text-align: left;"><code>[OPEN]</code> for all six</td>
+hardware realization, and the QEC–Darwinism tradeoff in ultrametric
+spaces. Uncertainty is the research agenda.</td>
+<td style="text-align: left;"><code>[OPEN]</code> for all seven</td>
 </tr>
 </tbody>
 </table>
@@ -3547,8 +3549,9 @@ not 100×.</li>
 one-sixth the physical qubit count of the surface code (241 vs ~40), not
 one-twentieth.</li>
 <li>A dilution refrigerator runs on a closed helium-3/helium-4 mixture —
-the 130-ton figure belongs to the LHC, not to a laboratory
-refrigerator.</li>
+the 130-ton figure belongs to the LHC, not to a laboratory refrigerator;
+the LHC’s cryogenic power is likewise corrected to tens of megawatts,
+not the roughly 40 megawatts stated in the May edition.</li>
 </ol>
 <p>The central claims are unchanged: the 20,000× cooling gap, the Carnot
 arithmetic, and the classically validated tree-code thresholds (50%

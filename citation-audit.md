@@ -54,7 +54,7 @@ entry (P3.AUTHOR-GATE-EVERY-ENTRY-1).
 ## Findings and dispositions
 
 1. **No fabricated or misattributed entries.** Every author list verified.
-2. **Two non-DOI internal references** remain (Lifecycle of a Fault-Tolerant
+2. **Three non-DOI internal references** remain (Lifecycle of a Fault-Tolerant
    Quantum Computer, QWAV Strategy Archive; A Different Geometry for Computing,
    QNFO/.github releases; Honest Investment Assessment, QWAV Strategy Archive) —
    these are program-internal documents without registered DOIs; they are

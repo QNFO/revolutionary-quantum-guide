@@ -20,6 +20,14 @@ the validation results (10.5281/zenodo.20134944), the 24 W per logical qubit
 estimate (10× uncertainty band); unanalyzable primitives — the claim that the
 Archimedean-vs-ultrametric choice is a physical question at all.
 
+## v1.2.1 scope (2026-08-21) — post-publication audit corrections
+
+Red-team (3 reviewers, 0 HARD / 8 SOFT+DESIGN): "Six open problems" summary
+corrected to seven (QEC–Darwinism added); LHC ratio marked ~100 (95× exact);
+Appendix A correction #5 completed; citation-audit count corrected; open problem 7
+now carries the F_L > 0.874 bound. No quantitative claims changed (verification log
+unchanged, 35 PASS).
+
 ## v1.2 scope (2026-08-20)
 
 1. Content corrections (5), each verified by artifacts/verification/
