@@ -1,4 +1,4 @@
-# Citation Audit — The Revolutionary Beginner's Guide to Quantum Computing (v1.2)
+# Citation Audit — The Revolutionary Beginner's Guide to Quantum Computing (v1.3.3)
 
 Audit date: 2026-08-21 (v1.3 additions live-verified). Method: every bibliographic entry verified live against
 Crossref (api.crossref.org), the arXiv API, and the Zenodo records API. No entry

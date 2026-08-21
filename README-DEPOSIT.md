@@ -2,7 +2,7 @@
 
 **Why We Don't Have Quantum Computers Yet — and What the Geometric Alternative Offers**
 
-Rowan Brad Quni-Gudzinas (QNFO/QWAV) · v1.3.2 · 2026-08-21 · CC BY 4.0
+Rowan Brad Quni-Gudzinas (QNFO/QWAV) · v1.3.3 · 2026-08-21 · CC BY 4.0
 
 A 20-chapter beginner's guide to quantum computing that starts with an honest
 question — why don't we have quantum computers yet? The guide teaches the
@@ -22,8 +22,17 @@ resolve to the most recent version:
 
 Quni-Gudzinas, Rowan Brad. *The Revolutionary Beginner's Guide to Quantum
 Computing: Why We Don't Have Quantum Computers Yet — and What the Geometric
-Alternative Offers.* v1.3.2, Zenodo, 2026-08-21.
+Alternative Offers.* v1.3.3, Zenodo, 2026-08-21.
 https://doi.org/10.5281/zenodo.20391554
+
+## What changed in v1.3.3 (August 2026)
+
+- Post-publication audit remediation: two corrupted TeX macros that rendered
+  "Math input error" in the HTML/PDF are fixed; the Part VI summary now lists
+  eight open problems (matching Chapter 20); a stray '#' before the E3-design
+  paragraph is removed; stale version labels and the README provenance footer
+  are corrected; the rendering gate now also scans control characters and
+  heading-without-space lines (10 checks).
 
 ## What changed in v1.3.2 (August 2026)
 
@@ -83,7 +92,7 @@ https://doi.org/10.5281/zenodo.20391554
 
 | File | Purpose |
 |:-----|:--------|
-| `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.md` | Manuscript (v1.3.2) |
+| `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.md` | Manuscript (v1.3.3) |
 | `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.html` | Rendered HTML |
 | `The-Revolutionary-Beginners-Guide-to-Quantum-Computing.pdf` | Rendered PDF |
 | `references.bib` | All references, BibTeX |
@@ -107,7 +116,7 @@ Requires Python 3.12, standard library only, deterministic. Writes
 ## Provenance
 
 - Source repository: https://github.com/QNFO/revolutionary-quantum-guide
-- This version: v1.2.2 record 10.5281/zenodo.22038733
+- This version: v1.3.3 record 10.5281/zenodo.22043966 · v1.3.2: 10.5281/zenodo.22040750 · v1.3.1: 10.5281/zenodo.22040708 · v1.3: 10.5281/zenodo.22040426 · v1.2.2: 10.5281/zenodo.22038733 · v1.2.1: 10.5281/zenodo.22038672 · v1.2: 10.5281/zenodo.22036025 · Prior version: v1.1 (2026-05-26), record 10.5281/zenodo.20391555
 - v1.2.1: 10.5281/zenodo.22038672 · v1.2: 10.5281/zenodo.22036025 ·
   Prior version: v1.1 (2026-05-26), record 10.5281/zenodo.20391555
 - Author: Rowan Brad Quni-Gudzinas — ORCID 0009-0002-4317-5604

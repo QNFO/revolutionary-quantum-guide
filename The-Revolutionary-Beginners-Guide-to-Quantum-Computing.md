@@ -3,8 +3,8 @@ title: "The Revolutionary Beginner's Guide to Quantum Computing"
 subtitle: "Why We Don't Have Quantum Computers Yet — and What the Geometric Alternative Offers"
 authors: "Rowan Brad Quni-Gudzinas"
 date: "2026-08-21"
-doi: "10.5281/zenodo.22040750"
-version: "v1.3.2"
+doi: "10.5281/zenodo.22043966"
+version: "v1.3.3"
 abstract: >
   A 20-chapter beginner's guide to quantum computing that starts with an honest question
   — why don't we have quantum computers yet? — rather than the usual "here's what a
@@ -25,7 +25,7 @@ status: "published"
 
 **Author:** [Rowan Brad Quni-Gudzinas](mailto://rowan.quni@outlook.com)
 **ORCID:** [0009-0002-4317-5604](https://orcid.org/0009-0002-4317-5604)
-**DOI:** 10.5281/zenodo.22040750
+**DOI:** 10.5281/zenodo.22043966
 
 
 ### Part I: The Honest Landscape
@@ -214,7 +214,7 @@ A 2026 successor analysis treats the thermodynamic and informational bottlenecks
 
 #### The Surface Code Plateau
 
-This is why the surface code is not a path to practical quantum computing at commercially useful scales. Google's 2023 demonstration (*Nature*, Vol. 614, p. 676) showed that increasing the surface code distance from 3 to 5 reduced the logical error rate from approximately 3% to approximately 2.9% — a marginal improvement. `[EST]` Extrapolating this trend linearly to distance 11 projects error rates of approximately 2.6% — still far from useful. `[PROP]` (A linear extrapolation is the conservative plateau model; Google's measured per-cycle suppression factor, $\Lambda pprox 2.14$, would project a lower rate under exponential scaling — but the qubit, measurement, and cooling costs grow with distance either way.)
+This is why the surface code is not a path to practical quantum computing at commercially useful scales. Google's 2023 demonstration (*Nature*, Vol. 614, p. 676) showed that increasing the surface code distance from 3 to 5 reduced the logical error rate from approximately 3% to approximately 2.9% — a marginal improvement. `[EST]` Extrapolating this trend linearly to distance 11 projects error rates of approximately 2.6% — still far from useful. `[PROP]` (A linear extrapolation is the conservative plateau model; Google's measured per-cycle suppression factor, $\Lambda \approx 2.14$, would project a lower rate under exponential scaling — but the qubit, measurement, and cooling costs grow with distance either way.)
 
 The 2024-2025 demonstrations of "below threshold" QEC (*Nature*, Vol. 638, p. 920) were genuine breakthroughs. But the threshold is a mathematical line — below it, error rates decrease with code distance; above it, they increase. Being below threshold does not mean the error rate is low enough. It means you are on the right side of the line. The distance from "below threshold" to "usefully low" is orders of magnitude, and closing it requires increasing code distance, which requires more physical qubits, which requires more syndrome measurements, which requires more cooling — which hits the thermodynamic wall. `[EST]`
 
@@ -506,7 +506,7 @@ But "below threshold" is not the same as "usefully low." The gap between demonst
 
 In 2023, Google Quantum AI published a landmark experiment demonstrating that increasing the surface code distance from $d = 3$ to $d = 5$ reduced the logical error rate — proving that error correction works. `[EST]` The result was celebrated as a major milestone, which it was. But the numbers tell a more sober story.
 
-The logical error rate at $d = 3$ was approximately 3%. At $d = 5$, it was approximately 2.9%. `[EST]` The improvement was real but marginal — a reduction of roughly 0.1 percentage points for a doubling of code distance. Extrapolating this trend linearly to $d = 11$ — the distance often cited as the threshold for "usefully low" error rates — projects a logical error rate of approximately 2.6%. `[PROP]` (A linear extrapolation is the conservative plateau model; Google's measured per-cycle suppression factor, $\Lambda pprox 2.14$, would project a lower rate under exponential scaling.)
+The logical error rate at $d = 3$ was approximately 3%. At $d = 5$, it was approximately 2.9%. `[EST]` The improvement was real but marginal — a reduction of roughly 0.1 percentage points for a doubling of code distance. Extrapolating this trend linearly to $d = 11$ — the distance often cited as the threshold for "usefully low" error rates — projects a logical error rate of approximately 2.6%. `[PROP]` (A linear extrapolation is the conservative plateau model; Google's measured per-cycle suppression factor, $\Lambda \approx 2.14$, would project a lower rate under exponential scaling.)
 
 Two-point-six percent. That is the error rate per logical gate that the best-understood error correction architecture projects at practically achievable code distances under the conservative linear extrapolation. For context, a computation involving a million logical gates — a modest quantum algorithm — would experience roughly 26,000 errors. The computation would fail. `[EST]`
 
@@ -1036,7 +1036,7 @@ The ultrametric quantum computing framework makes three predictions that can be 
 | Risk | High (requires new hardware that does not exist) |
 | Status | `[PRE-EXPERIMENTAL]` — not yet executed; a trapped-ion falsifiability register with five pre-registered observables has been published (10.5281/zenodo.22025544) |
 
-#Since the May 2026 edition, the hardware path has a design. The trapped-ion ultrametric testbed (10.5281/zenodo.22025544) organizes twenty-one program records into one testable claim, with five pre-registered observables, each carrying a kill-condition and an apparatus already demonstrated in the cited literature. The register also records what the program has already ruled out: generic clock-rest coupling violates ultrametricity at a 29–35 percent rate, while diagonal coupling yields exact ultrametric structure — the very asymmetry the protocol is designed to measure. This does not execute E3. It makes E3 fundable: the design, the observables, and the kill-conditions are on the table for any laboratory that wants to run the experiment. `[PROP]`
+Since the May 2026 edition, the hardware path has a design. The trapped-ion ultrametric testbed (10.5281/zenodo.22025544) organizes twenty-one program records into one testable claim, with five pre-registered observables, each carrying a kill-condition and an apparatus already demonstrated in the cited literature. The register also records what the program has already ruled out: generic clock-rest coupling violates ultrametricity at a 29–35 percent rate, while diagonal coupling yields exact ultrametric structure — the very asymmetry the protocol is designed to measure. This does not execute E3. It makes E3 fundable: the design, the observables, and the kill-conditions are on the table for any laboratory that wants to run the experiment. `[PROP]`
 
 ### Why This Sequence Matters
 
@@ -1295,7 +1295,7 @@ What you do with that knowledge is up to you.
 |:--------|:-----------|:-----------|
 | 18. The Blueprint — What to Do in 2026 | PQC migration (urgent), quantum sensing (now), cloud experimentation (budget realistically), E1/E2 (fund if possible), E3 (wait for data). Platform diversity is rational. Architecture bet: alternative QEC geometries. | `[EST]` for PQC/sensing; `[PROP]` for investment recommendations |
 | 19. How to Read the Research | Six-source landscape (journals, preprints, corporate PR, analysts, media, open-access). Six-question evaluation checklist. Confidence tagging as a transferable cognitive skill. | `[EST]` |
-| 20. What We Still Don't Know | Seven open problems: perfect tensors for $p>2$, tree automorphism gates, full quantum validation, physical noise modeling, Adèle ring connection, hardware realization, and the QEC–Darwinism tradeoff in ultrametric spaces. Uncertainty is the research agenda. | `[OPEN]` for all seven |
+| 20. What We Still Don't Know | Eight open problems: perfect tensors for $p>2$, tree automorphism gates, full quantum validation, physical noise modeling, Adèle ring connection, hardware realization, the QEC–Darwinism tradeoff in ultrametric spaces, and the calibrated displacement question. Uncertainty is the research agenda. | mixed tags: `[OPEN]`/`[GAP]`/`[SPEC]`/`[PROP]` |
 
 ---
 

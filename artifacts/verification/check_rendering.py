@@ -71,6 +71,15 @@ for sm in re.finditer(rb"stream\r?\n", data):
 check("no U+FFFD in decompressed PDF text streams", stream_hits == 0,
       f"stream_hits={stream_hits} (raw-byte count {raw_fffd} is compressed-data coincidence — FFFD-RAW-FALSE-POSITIVE-1)")
 
+# 4b. C0 control characters in the manuscript (BEL etc. — corrupted TeX class)
+c0bad = sorted({c for c in t if ord(c) < 32 and c not in "\n\t\r"})
+check("no C0 control chars (BEL/escape corruption)", len(c0bad) == 0,
+      f"c0={[f'U+{ord(c):04X}' for c in c0bad]}")
+
+# 4c. heading-without-space lines (stray '#' glued to prose)
+hashbad = [i for i, ln in enumerate(lines, 1) if re.match(r"^#[A-Za-z]", ln)]
+check("no heading-without-space lines (stray #)", len(hashbad) == 0, f"lines={hashbad[:4]}")
+
 # 5. HTML: single title, single abstract
 h = io.open(HTML, encoding="utf-8", errors="replace").read()
 check("single rendered title", len(re.findall(r'<h1[^>]*class="title"', h)) == 1)

@@ -1,4 +1,4 @@
-# Project Plan — The Revolutionary Beginner's Guide to Quantum Computing (v1.2)
+# Project Plan — The Revolutionary Beginner's Guide to Quantum Computing (v1.3.3)
 
 WBS: QNFO.RES (consilience/archive) — QWAV guide artifact
 Slug: the-revolutionary-beginners-guide-to-quantum-computing-why-we-dont-have-quantum-computers-yet-and-what-the-geometric-alt
@@ -19,6 +19,17 @@ code-distance combinatorics; named imported inputs — the BTQP threshold values
 the validation results (10.5281/zenodo.20134944), the 24 W per logical qubit
 estimate (10× uncertainty band); unanalyzable primitives — the claim that the
 Archimedean-vs-ultrametric choice is a physical question at all.
+
+## v1.3.3 scope (2026-08-21) — post-publication audit remediation
+
+Red-team (3 reviewers) found 2 HARD in v1.3.2: (1) two BEL control characters
+(U+0007) corrupted \approx in Ch. 3 + Ch. 8 (heredoc backslash-collapse →
+MathJax 'Math input error' in the HTML/PDF); (2) Part VI summary said Seven open
+problems while Ch. 20 has eight. Also fixed: stray '#' before the E3-design
+paragraph, stale (v1.2) headers in references.bib/citation-audit.md/PROJECT-PLAN,
+stale README provenance footer, program-count line. Gates extended:
+check_rendering.py now scans C0 control chars and heading-without-space lines
+(10 checks); a browser-side merror check verifies zero MathJax errors.
 
 ## v1.3.2 scope (2026-08-21) — README restoration
 
@@ -101,7 +112,7 @@ roadmap's arithmetic.
 
 - [x] ZENODO-INQUIRY-1 ignorance audit (docs/ignorance-audit.md)
 - [x] DUE-DILIGENCE-DEPTH-1 corpus sweep (3 formulations × 2 topics + enriched)
-- [x] P3.AUTHOR-GATE-EVERY-ENTRY-1 (16 external + 11 program entries verified live)
+- [x] P3.AUTHOR-GATE-EVERY-ENTRY-1 (16 external + 16 program entries verified live)
 - [x] COMPUTATIONAL-VERIFICATION-1 (35 PASS / 0 FAIL, script + log deposited)
 - [x] PRACTITIONER-RELEVANCE-1 (Ch. 18 blueprint + Appendix A)
 - [x] SO-WHAT-GATE / premise-depth (this document + manuscript prose)
